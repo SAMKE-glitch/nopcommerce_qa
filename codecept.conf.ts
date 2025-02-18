@@ -3,12 +3,12 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://demo.nopcommerce.com/',
+      url: 'https://demo.nopcommerce.com',
       show: true
     }
   },
   include: {
-    I: './steps_file'
+    I: './steps_file'  // This could still be your global steps file if you need one
   },
   mocha: {},
   bootstrap: null,
@@ -16,8 +16,8 @@ exports.config = {
   teardown: null,
   hooks: [],
   gherkin: {
-    features: './tests/features/*.feature',
-    steps: ['./tests/step_definitions/steps.ts']
+    features: './features/*.feature', // Path for your feature files
+    steps: ['./step_definitions/homepage.steps.ts', './step_definitions/homepage-interaction.steps.ts', './step_definitions/register.steps.ts'] // Directly include step definition files
   },
   plugins: {
     screenshotOnFail: {
@@ -47,6 +47,6 @@ exports.config = {
       timeout: 0
     }
   ],
-  tests: './tests',
+  tests: './tests', // Make sure this is where your test files are
   name: 'noPWebsite-test'
-}
+};

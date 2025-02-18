@@ -1,4 +1,4 @@
-Feature('search, login');
+Feature('homepage');
 
 Scenario('test something',  ({ I }) => {
 
