@@ -17,7 +17,7 @@ exports.config = {
   hooks: [],
   gherkin: {
     features: './features/*.feature', // Path for your feature files
-    steps: ['./step_definitions/homepage.steps.ts', './step_definitions/homepage-interaction.steps.ts', './step_definitions/register.steps.ts'] // Directly include step definition files
+    steps: ['./step_definitions/homepage.steps.ts', './step_definitions/homepage-interaction.steps.ts', './step_definitions/login.steps.ts'] // Directly include step definition files
   },
   plugins: {
     screenshotOnFail: {
