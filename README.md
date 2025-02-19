@@ -37,7 +37,7 @@ npx codeceptjs gherkin:init
 ````
 5. **🛠️ Configuration**
 
-Prior to executing tests, please ensure that your configuration files (e.g., codecept.conf.ts or codecept.conf.js) are properly tailored to your testing environment. This includes, but is not limited to, setting the appropriate base URL, browser options, and timeout values. Adjust these settings to align with your specific infrastructure requirements.
+Prior to executing tests, please ensure that your configuration files (e.g., `codecept.conf.ts` or `codecept.conf.js`) are properly tailored to your testing environment. This includes, but is not limited to, setting the appropriate base URL, browser options, and timeout values. Adjust these settings to align with your specific infrastructure requirements.
 
 6. **⚙️🧪 Running Tests**
 ````bash
