@@ -9,7 +9,10 @@ Automated test suite for nopCommerce website functionality using CodeceptJS with
 ### Prerequisites
 - Node.js v18+
 - npm v9+
-- Git
+- Codeceptjs
+- Playwright
+- TypeScript
+- Gherkin Syntax
 
 ### Installation
 
