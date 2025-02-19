@@ -1,3 +1,14 @@
+require('dotenv').config();
+const argv = require('minimist')(process.argv.slice(2));
+
+// Set environment variables from CLI arguments
+if (argv.email) process.env.EMAIL = argv.email;
+if (argv.password) process.env.PASSWORD = argv.password;
+
+// Validate credentials
+if (!process.env.EMAIL || !process.env.PASSWORD) {
+  throw new Error('Please provide credentials using --email=... --password=... or environment variables');
+}
 exports.config = {
   output: './output',
   helpers: {

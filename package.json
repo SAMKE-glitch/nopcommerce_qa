@@ -21,6 +21,8 @@
     "@codeceptjs/ui": "^1.2.2",
     "@types/node": "^22.13.4",
     "codeceptjs": "^3.7.2",
+    "dotenv": "^16.4.7",
+    "minimist": "^1.2.8",
     "playwright": "^1.50.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"

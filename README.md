@@ -37,6 +37,24 @@ npx codeceptjs gherkin:init
 ````
 5. **🛠️ Configuration**
 
+ **🔑 Environment Variables**
+
+Before running tests, ensure you set up your environment variables.
+- **Install dotenv package (if not installed):**
+    ````bash
+    npm install dotenv --save
+
+    ````
+- Create a .env file in the project root:
+  Add the following environment variables:
+    ````
+    EMAIL=<your email>
+    PASSWORD=<your password>
+    ````
+- Or run your credentials on CLI(Command Line Interface)
+  ````bash
+  EMAIL=<your email> PASSWORD=<your password> npx codeceptjs run --features
+  ````
 Prior to executing tests, please ensure that your configuration files (e.g., `codecept.conf.ts` or `codecept.conf.js`) are properly tailored to your testing environment. This includes, but is not limited to, setting the appropriate base URL, browser options, and timeout values. Adjust these settings to align with your specific infrastructure requirements.
 
 6. **⚙️🧪 Running Tests**
