@@ -1,9 +1,13 @@
-Feature: Login Page Access
+Feature: Login Functionality
 
-  Scenario: Login page loads successfully
+  Scenario: User logs in with valid credentials
     Given I am on the login page
+    When I enter "sammythemwa@gmail.com" as the email and "Ednah2025" as the password
+    And I click the login button
+    And I complete human verification
+    Then I should be redirected to the dashboard
 
-  Scenario: Credentials are successfully entered
+  Scenario: User logs in with invalid details
     Given I am on the login page
-    When I enter my credentials
-    Then credentials are successfully entered
+    When I enter "samwelmwawasi4@gmail.com" as the email and "Ednah2030" as the password
+    Then I should see an error message
