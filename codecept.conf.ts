@@ -47,7 +47,8 @@ exports.config = {
     steps: [
       './step_definitions/homepage.steps.ts',
       './step_definitions/homepage-interaction.steps.ts',
-      './step_definitions/login.steps.ts'
+      './step_definitions/login.steps.ts',
+      './step_definitions/searchLaptop.steps.ts'
     ]
   },
   plugins: {
