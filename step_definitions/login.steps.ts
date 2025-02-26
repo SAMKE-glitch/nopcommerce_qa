@@ -33,3 +33,4 @@ When("I click the Submit button", () => {
 Then("I should be redirected to the dashboard", () => {
   I.seeInCurrentUrl("https://www.kilimall.co.ke/"); // Verifies that the current URL matches the expected destination
 });
+
