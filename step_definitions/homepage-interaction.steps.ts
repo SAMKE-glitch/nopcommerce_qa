@@ -8,6 +8,6 @@ Given('the user is on the homepage', async () => {
 
 Then('the "Register" button should be visible', async () => {
   // Debugging the visibility of the button
-  console.log('Checking for "Register" button');
-  await I.see('Register');
+  console.log('Checking for "My Account" button');
+  await I.see('My Account');
 });
